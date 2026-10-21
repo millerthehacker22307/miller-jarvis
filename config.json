@@ -1,0 +1,1 @@
+{"fallback_model":"qwen3.5:2b","model":"qwen3.5:4b","num_ctx":4096,"ollama_url":"http://localhost:11434","owner_name":"Miller","temperature":0.4}
