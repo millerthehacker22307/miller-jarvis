@@ -18,10 +18,24 @@ It works the way a big assistant does, in miniature:
 - **Tools** — calculator (safe, no `eval`), clock, notes, web page reader,
   remember/schedule/list-tasks.
 
+## The app (recommended — no terminal, no commands)
+
+Miller's Jarvis is a proper graphical app: a chat window with bubbles, a
+live sidebar showing pending tasks and memory, and scheduled-task results
+appearing right in the chat.
+
+**Just double-click `Start-Jarvis.bat`** (Windows) or run
+`bash start-jarvis.sh` (Linux/Mac). The launcher does everything itself:
+finds Python, installs/starts Ollama if needed, downloads the model on the
+first run, and opens the app window. If Python is missing it opens the
+Python download page for you — install it with "Add to PATH" ticked, then
+double-click again.
+
 ## Setup (one time, ~10 minutes)
 
 **Windows:** install Python 3 (python.org, tick "Add to PATH") and Ollama
-(ollama.com/download), then run `setup_windows.bat`.
+(ollama.com/download), then run `setup_windows.bat` — or simply use the
+one-click launcher above, which guides you through both.
 
 **Linux / WSL2:** run `bash setup_linux.sh`.
 
@@ -29,9 +43,8 @@ It works the way a big assistant does, in miniature:
 
 ## Run
 
-```
-python jarvis.py
-```
+Easiest: double-click **`Start-Jarvis.bat`**. From a terminal, the GUI is
+`python app.py` and the text version is `python jarvis.py`.
 
 ## Everyday use
 
